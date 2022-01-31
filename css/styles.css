@@ -105,7 +105,6 @@ body button {
   margin-right: 10px;
 }
 
-
 .page-header-contacts-mail:hover,
 .page-header-contacts-mail:focus,
 .page-header-contacts-tel:hover,
@@ -128,7 +127,7 @@ body button {
   padding-bottom: 200px;
   margin-bottom: 94px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url('../images/index-img/slogan-img.jpg');
+    url('../images/index-img/slogan-img.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -176,7 +175,7 @@ body button {
   align-items: center;
   margin-bottom: 30px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--filter-btn-color);
   border-radius: 4px;
 }
 
@@ -220,6 +219,7 @@ body button {
 
 .our-team {
   padding: 94px 0;
+  background-color: var(--filter-btn-color);
 }
 .our-team-pics {
   display: flex;
@@ -259,9 +259,10 @@ body button {
   margin: 0 32px 30px;
 }
 
-.our-team-social-icons > .item {
+.our-team-social-icons > .item,
+.basement-social-icons > .item {
   padding: 12px;
-border-radius: 50%;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
 }
@@ -270,21 +271,56 @@ border-radius: 50%;
   margin-right: 10px;
 }
 .our-team-social-icons > .item:hover {
-  background-color: #afb1b8;
+  background-color: var(--additional-and-hover-color);
 }
 
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: var(--font-support-color);
 }
 
 .our-team-social-icons > .item:hover .social-icon {
+  fill: var(--white);
+}
+
+.clients {
+  padding-top: 94px;
+}
+
+.clients-list {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.clients-img {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--filter-btn-color);
+  border-radius: 4px;
+}
+
+.clients-img:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-img:hover {
+  border-color: var(--additional-and-hover-color);
+}
+
+.clients-img-svg {
+  fill: var(--font-support-color)
+}
+
+.clients-img:hover .clients-img-svg {
   fill: var(--additional-and-hover-color);
 }
 
 .basement {
-  padding: 60px 0;
+  padding-top: 60px;
   background-color: var(--main-background-color);
 }
 
@@ -295,6 +331,10 @@ border-radius: 50%;
 
 .basement-logo {
   color: var(--white);
+}
+
+.flexy {
+  display: flex;
 }
 
 .basement-address {
@@ -314,6 +354,38 @@ border-radius: 50%;
 
 .basement-phys-address {
   color: var(--white);
+}
+
+.basement-social {
+  margin-top: 12px;
+}
+
+.basement-social-header {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--white);
+}
+
+.basement-social-icons {
+  display: flex;
+}
+
+.basement-social-icons > .item {
+  background-color: #f3fdaafa;
+}
+
+.basement-social-icons > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.basement-social-icons > .item:hover {
+  background-color: var(--additional-and-hover-color););
+}
+
+.basement-social-icons > .item > .social-icon {
+  fill: var(--white);
 }
 
 .portfolio-main {
