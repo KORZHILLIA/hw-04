@@ -259,18 +259,19 @@ body button {
   margin: 0 32px 30px;
 }
 
-.our-team-social-icons > .item,
-.basement-social-icons > .item {
-  padding: 12px;
-  border-radius: 50%;
+.our-team-social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
 }
 
 .our-team-social-icons > .item:not(:last-child) {
   margin-right: 10px;
 }
-.our-team-social-icons > .item:hover {
+.our-team-social-icon:hover {
   background-color: var(--additional-and-hover-color);
 }
 
@@ -373,7 +374,8 @@ body button {
 }
 
 .basement-social-icons > .item {
-  background-color: #f3fdaafa;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 .basement-social-icons > .item:not(:last-child) {
@@ -381,10 +383,10 @@ body button {
 }
 
 .basement-social-icons > .item:hover {
-  background-color: var(--additional-and-hover-color););
+  background-color: var(--additional-and-hover-color);
 }
 
-.basement-social-icons > .item > .social-icon {
+.basement-social-icons > .item:hover .social-icon {
   fill: var(--white);
 }
 
