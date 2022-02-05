@@ -62,7 +62,7 @@
       <section class="slogan">
         <div class="container">
           <h1 class="slogan-text">Эффективные решения для вашего бизнеса</h1>
-          <button class="slogan-order-btn" type="button">Заказать услугу</button>
+          <button class="slogan-order-btn" data-modal-open type="button">Заказать услугу</button>
         </div>
       </section>
       <section class="features-describer">
@@ -120,31 +120,46 @@
           <h2 class="sub-header">Чем мы занимаемся</h2>
           <ul class="our-business-pics no-style-list">
             <li>
-              <img
-                class="our-business-pic"
-                src="images/index-img/hands-on-keyboard.jpg"
-                alt="Hands on Keyboard"
-                width="370"
-                height="294"
-              />
+              <div class="relative">
+                <img
+                  class="our-business-pic"
+                  src="images/index-img/hands-on-keyboard.jpg"
+                  alt="Hands on Keyboard"
+                  width="370"
+                  height="294"
+                />
+                <div class="our-business-label">
+                  <p class="our-business-label-text">Десктопные приложения</p>
+                </div>
+              </div>
             </li>
             <li>
-              <img
-                class="our-business-pic"
-                src="images/index-img/hands-with-phone.jpg"
-                alt="Hands with Phone"
-                width="370"
-                height="294"
-              />
+              <div class="relative">
+                <img
+                  class="our-business-pic"
+                  src="images/index-img/hands-with-phone.jpg"
+                  alt="Hands with Phone"
+                  width="370"
+                  height="294"
+                />
+                <div class="our-business-label">
+                  <p class="our-business-label-text">Мобильные приложения</p>
+                </div>
+              </div>
             </li>
             <li>
-              <img
-                class="our-business-pic"
-                src="images/index-img/hands-with-tablet.jpg"
-                alt="Hands with tablet"
-                width="370"
-                height="294"
-              />
+              <div class="relative">
+                <img
+                  class="our-business-pic"
+                  src="images/index-img/hands-with-tablet.jpg"
+                  alt="Hands with tablet"
+                  width="370"
+                  height="294"
+                />
+                <div class="our-business-label">
+                  <p class="our-business-label-text">Дизайнерские решения</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -357,6 +372,13 @@
           </ul>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal relative">
+          <div class="modal-close-btn flexy" data-modal-close>
+            <img class="modal-close-btn-cross" src="./images/portfolio-img/close-cross.png" alt="Closing Cross">
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="basement">
       <div class="container flexy">
@@ -413,5 +435,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

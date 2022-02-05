@@ -25,12 +25,12 @@
           <nav>
             <ul class="page-header-nav no-style-list">
               <li class="item">
-                <a class="page-header-nav-link is-active" href="./index.html" target="_self"
+                <a class="page-header-nav-link" href="./index.html" target="_self"
                   >Студия</a
                 >
               </li>
               <li class="item">
-                <a class="page-header-nav-link" href="./portfolio.html" target="_self">Портфолио</a>
+                <a class="page-header-nav-link is-active" href="./portfolio.html" target="_self">Портфолио</a>
               </li>
               <li class="item">
                 <a class="page-header-nav-link" href="#">Контакты</a>
@@ -39,10 +39,20 @@
           </nav>
           <ul class="page-header-contacts no-style-list">
             <li class="item">
-              <a class="page-header-contacts-mail" href="info@devstudio.com">info@devstudio.com</a>
+              <a class="page-header-contacts-mail" href="info@devstudio.com">
+                <svg class="icon-envelope" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
             <li class="item">
-              <a class="page-header-contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="page-header-contacts-tel" href="tel:+380961111111">
+                <svg class="icon-phone" width="10" height="16">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
         </div>
@@ -70,11 +80,16 @@
           </ul>
           <ul class="portfolio-cards no-style-list">
             <li class="item">
+              <div class="relative">
               <img
                 class="portfolio-card-img"
                 src="images/portfolio-img/laptop.jpg"
                 alt="Laptop with people on the screen"
               />
+              <div class="portfolio-card-overlay">
+              <p class="portfolio-card-overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+              </div>
+              </div>
               <h2 class="portfolio-card-header">Технокряк</h2>
               <p class="portfolio-card-subheader">Веб-сайт</p>
             </li>
@@ -154,24 +169,59 @@
         </div>
       </section>
     </main>
-    <footer class="basement">
-      <div class="container">
-        <a href="index.html" class="basement-logo logo-main">
-          <span class="blue-part-logo">Web</span><span class="basement-logo">Studio</span>
-        </a>
-        <address class="basement-address">
-          <ul class="basement-address-list no-style-list">
-            <li>
-              <a class="basement-phys-address" href="#">г. Киев, пр-т Леси Украинки, 26</a>
+        <footer class="basement">
+      <div class="container flexy">
+        <div class="basement-logo-and-address">
+          <a href="index.html" class="basement-logo logo-main">
+            <span class="blue-part-logo">Web</span><span class="basement-logo">Studio</span>
+          </a>
+          <address class="basement-address">
+            <ul class="basement-address-list no-style-list">
+              <li>
+                <a class="basement-phys-address" href="#">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li>
+                <a class="basement-mail" href="info@example.com">info@example.com</a>
+              </li>
+              <li>
+                <a class="basement-tel" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="basement-social">
+          <h2 class="basement-social-header">Присоединяйтесь</h2>
+          <ul class="basement-social-icons no-style-list">
+            <li class="item">
+              <a class="our-team-social-icon" href="https://www.instagram.com">
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a class="basement-mail" href="info@example.com">info@example.com</a>
+            <li class="item">
+              <a class="our-team-social-icon" href="https://www.twitter.com">
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a class="basement-tel" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li class="item">
+              <a class="our-team-social-icon" href="https://facebook.com">
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a class="our-team-social-icon" href="https://www.linkedin.com">
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
